@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArtStore</title>
+        <!-- ícone do site -->
+        <link rel="shortcut icon" href="./icon/icon_artstore.ico" type="image/x-icon">
+        <!-- CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Lacquer&family=MuseoModerno&family=Nova+Script&family=Roboto+Mono&family=Tilt+Prism&display=swap" rel="stylesheet">
+        <!-- Meu CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header" class="navbar navbar-expand-lg  sticky-top p-1">
+            <div class="container">
+                <h1 class="navbar-brand m-0">
+                    <span class="text-white">A</span>rt<span class="text-white">S</span>tore
+                </h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navID" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="navID" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active" href="#about">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre a loja
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#custom">
+                                <i class="bi bi-pencil me-1"></i>
+                                Personalizações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#product">
+                                <i class="bi bi-bag-fill me-1"></i>
+                                Produtos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#contact">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
+            <section id="about">
+                <div id="carouselID" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#carouselID" data-bs-slide-to="0" class="active" type="button"></button>
+                        <button data-bs-target="#carouselID" data-bs-slide-to="1" type="button"></button>
+                        <button data-bs-target="#carouselID" data-bs-slide-to="2" type="button"></button>
+                        <button data-bs-target="#carouselID" data-bs-slide-to="3" type="button"></button>
+                        <button data-bs-target="#carouselID" data-bs-slide-to="4" type="button"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="w-100" src="https://images.unsplash.com/photo-1580136579312-94651dfd596d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1317&q=80" alt="Batalha medieval">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="https://cdn.pixabay.com/photo/2017/11/20/02/00/fantasy-2964231_1280.jpg" alt="Estátuas humanas rachadas">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_1280.jpg" alt="Camada de cores">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="https://cdn.pixabay.com/photo/2021/08/18/19/26/background-6556413_1280.jpg" alt="'Oceano'">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="https://cdn.pixabay.com/photo/2016/07/07/01/16/abstract-1501710_1280.jpg" alt="Fumaças de cortina">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselID">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselID">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row pt-5 pb-5">
+                        <div class="col-md-7">
+                            <img class="d-block w-100" src="https://images.unsplash.com/photo-1605115458649-e8059ed95f70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80" alt="">
+                        </div>
+                        <div class="col-md-5 mt-3 mt-md-0">
+                            <h2 class="section-title">
+                                Sobre <span class="text-white">a loja</span>
+                            </h2>
+                            <p class="section-text fs-5">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga odio qui expedita repellendus perferendis corporis fugiat rerum aspernatur quisquam facere, ipsa at, possimus blanditiis iure, eius assumenda accusantium explicabo voluptatum?
+                            </p>
+                            <p class="section-text fs-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quas possimus perspiciatis similique eligendi officiis
+                            </p>
+                            <h2 class="section-title">
+                                <span class="text-white">Artes famosas</span> da loja
+                            </h2>
+                            <ul class="m-0">
+                                <li class="fs-5">
+                                    item 1
+                                </li>
+                                <li class="fs-5">
+                                    Item 2
+                                </li>
+                                <li class="fs-5">
+                                    Item 3
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="custom">
+                <div class="container">
+                    <div class="row pt-5">
+                        <h1 class="section-title-2 fw-bold text-center">Encomendas <span class="text-green">Customizadas</span></h1>
+                    </div>
+                    <div class="row pt-3 pb-5">
+                        <div class="col-md-4">
+                            <img class="d-block w-100" src="https://images.unsplash.com/photo-1571907483083-af70aeda3285?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Quadro Branco">
+                            <h3 class="section-title-2 fw-bold text-green mt-1">
+                                <i class="me-1 bi bi-image"></i>
+                                Quadros
+                            </h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officiis a laborum id qui delectus nemo doloremque, consequatur omnis modi labore commodi reprehenderit earum repellendus nisi provident obcaecati dolor esse!
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="d-block w-100" src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Computador na mesa">
+                            <h3 class="section-title-2 fw-bold text-green mt-1">
+                                <i class="me-1 bi bi-laptop"></i>
+                                Photoshop
+                            </h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officiis a laborum id qui delectus nemo doloremque, consequatur omnis modi labore commodi reprehenderit earum repellendus nisi provident obcaecati dolor esse!
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="d-block w-100" src="https://img.freepik.com/fotos-gratis/bela-escultura-de-figura-romana_23-2149413157.jpg" alt="Escultura grega">
+                            <h3 class="section-title-2 fw-bold text-green mt-1">
+                                <i class="me-1 bi bi-bank"></i>
+                                Esculturas
+                            </h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur officiis a laborum id qui delectus nemo doloremque, consequatur omnis modi labore commodi reprehenderit earum repellendus nisi provident obcaecati dolor esse!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="product">
+                <div class="container">
+                    <div class="row pt-5">
+                        <h1 class="section-title text-center">Nossos <span class="text-white">Produtos</span></h1>
+                    </div>
+                    <div class="row pt-3 pb-5">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pill flex-column">
+                                <button class="fw-bold rounded text-start nav-link active" data-bs-toggle="tab" data-bs-target="#mais-vendidos" type="button">Mais vendidos</button>
+                                <button class="fw-bold rounded text-start nav-link"data-bs-toggle="tab" data-bs-target="#novos-produtos" type="button">Novos Produtos</button>
+                                <button class="fw-bold rounded text-start nav-link"data-bs-toggle="tab" data-bs-target="#quadros" type="button">Quadros</button>
+                                <button class="fw-bold rounded text-start nav-link"data-bs-toggle="tab" data-bs-target="#artes-de-photoshop" type="button">Artes de Photoshop</button>
+                                <button class="fw-bold rounded text-start nav-link"data-bs-toggle="tab" data-bs-target="#esculturas" type="button">Esculturas</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content p-4 rounded">
+                                <div id="mais-vendidos" class="tab-pane active">
+                                    <div class="row">
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://cdn.pixabay.com/photo/2016/09/08/02/06/fairy-tale-1653150_1280.jpg" alt="Imagem de um cavaleiro e um dragão">
+                                            <h5>Conhecendo o Dragão</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1620932378359-7f5b5a61f587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Imagem de uma mini estátua sentada">
+                                            <h5>Xavante</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1620932381757-c05e85fbdccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Imagem de uma mini estátua lendo">
+                                            <h5>Conselheiro</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" alt="Imagem de uma mini estátua lendo">
+                                            <h5>Paris - Torre Eiffel</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://cdn.pixabay.com/photo/2017/09/30/19/05/cubes-2803223_1280.jpg" alt="Imagem de uma mini estátua lendo">
+                                            <h5>Colaspso</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="novos-produtos" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1620932381757-c05e85fbdccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Imagem de uma mini estátua lendo">
+                                            <h5>Conselheiro</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1620932378359-7f5b5a61f587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Imagem de uma mini estátua sentada">
+                                            <h5>Xavante</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://cdn.pixabay.com/photo/2019/09/25/13/49/ancient-4503722_1280.jpg" alt="Local pegando fogo">
+                                            <h5>Fim dos tempos...</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1629648920459-83b1b62ae46e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80" alt="Hexágono infinito">
+                                            <h5>Aperto</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="quadros" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://img.freepik.com/vetores-gratis/variedade-de-animais-faces-poligonais_23-2147529784.jpg?w=740&t=st=1686705506~exp=1686706106~hmac=285c16f061f05b53932f2f23888e56c540cc328098a1ddc29e68fe91207c44e4" alt="Imagem de uma mini estátua sentada">
+                                            <h5>Celestiais</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://img.freepik.com/vetores-gratis/projeto-guaxinim-triangulo_23-2147495382.jpg?w=740&t=st=1686705516~exp=1686706116~hmac=e49dca152b79e14266a49c7f87464ab41f32b441be292b670fce83ebc601654a" alt="Guaxinim triangular">
+                                            <h5>Guaxinim</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://img.freepik.com/vetores-premium/cervo-geometrico-em-pe-com-a-perna-levantada-contra_73458-2375.jpg?w=740" alt="Cervo triangular">
+                                            <h5>Cervo</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://cdn.pixabay.com/photo/2016/09/08/02/06/fairy-tale-1653150_1280.jpg" alt="Imagem de um cavaleiro e um dragão">
+                                            <h5>Conhecendo o Dragão</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://cdn.pixabay.com/photo/2022/05/18/06/51/castle-7204499_1280.jpg" alt="Castelo">
+                                            <h5>Castelo Feudal</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://cdn.pixabay.com/photo/2019/09/25/13/49/ancient-4503722_1280.jpg" alt="Local pegando fogo">
+                                            <h5>Fim dos tempos...</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="artes-de-photoshop" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1629648920459-83b1b62ae46e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80" alt="Hexágono infinito">
+                                            <h5>Aperto</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://img.freepik.com/vetores-premium/construcao-de-vetor-abstrato-plano-de-fundo-dimensional-de-baixo-poli-ilustracao-abstrata-de-tecnologias-de-inovacao_570429-39407.jpg?w=740" alt="Triângulos">
+                                            <h5>Trio</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1629649674254-edcdab22072d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Circulo de quadrados">
+                                            <h5>O Olho</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1629724024952-bada03d4e392?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Circulos e Quadrados flutuando ">
+                                            <h5>Máteria</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://img.freepik.com/fotos-gratis/guerreiro-de-fantasia-armado-em-armadura-de-metal-e-capacete-generativo-ai_191095-627.jpg?w=1060&t=st=1686706872~exp=1686707472~hmac=89eaef0e51cec7275f87fe2eaa688f5446f645cd4a8cab139a9d25f4cb533546" alt="Caveleiro segurando uma espada">
+                                            <h5>Cavaleiro</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" alt="Imagem de uma mini estátua lendo">
+                                            <h5>Paris - Torre Eiffel</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="esculturas" class="tab-pane">
+                                    <div class="row">
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1620932381757-c05e85fbdccd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Imagem de uma mini estátua lendo">
+                                            <h5>Conselheiro</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1620932378359-7f5b5a61f587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Imagem de uma mini estátua sentada">
+                                            <h5>Xavante</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1606640935390-5c6694facfec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Estátua de um homem">
+                                            <h5>Governante</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                        <div class="col-md-3 p-1">
+                                            <img class="d-block w-100 rounded" src="https://images.unsplash.com/photo-1553528989-978b279600f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Estátua de um homem com uma cara de caveira">
+                                            <h5>Pesadelo</h5>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                            </p>
+                                            <button class="btn btn-outline-success btn-md w-100" type="button">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <div class="row  pt-5 pb-5">
+                        <div class="col-md-7">
+                            <form>
+                                <div class="mt-3">
+                                    <label class="form-label fw-bold section-text text-green" for="nome">Nome</label>
+                                    <input required id="nome" class="form-control" type="text">
+                                </div>
+                                <div class="mt-3">
+                                    <label class="form-label fw-bold section-text text-green" for="email">E-mail</label>
+                                    <input required id="email" class="form-control" type="email">
+                                </div>
+                                <div class="mt-3">
+                                    <label class="form-label fw-bold section-text text-green" for="telefone">Telefone(opicional)</label>
+                                    <input id="telefone" class="form-control" type="tel">
+                                </div>
+                                <div class="mt-3">
+                                    <label class="form-label fw-bold section-text text-green" for="mensagem">Mensagem</label>
+                                    <textarea required class="form-control" id="mensagem"></textarea>
+                                </div>
+                                <button class="btn btn-success btn-lg fw-bold mt-3">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5 ">
+                            <h3 class="section-title fs-3 mt-4">
+                                <span class="text-green">Redes Sociais</span>
+                            </h3>
+                            <ul class="social-links d-flex p-0">
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <span class="text-green">
+                                            <i class="bi bi-facebook"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="fs-3 ms-3 me-3">
+                                    <a href="#">
+                                        <span class="text-green">
+                                            <i class="bi bi-instagram"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="fs-3 me-3">
+                                    <a href="#">
+                                        <span class="text-green">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="fs-3">
+                                    <a href="#">
+                                        <span class="text-green">
+                                            <i class="bi bi-youtube"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-3">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua JavaScript da Silva, Bairro Bootstrap - Paraná - PR
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="container pt-3">
+                <div class="row">
+                    <p class="text-center fs-5 fw-bold">
+                        &copy; Copyright <span class="text-white">A</span>rt<span class="text-white">S</span>tore 2023 - Todos os direitos reservados
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

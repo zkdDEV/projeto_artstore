@@ -1,0 +1,102 @@
+#header h1
+{
+    font-family: "Tilt Prism", cursive;
+    font-size: 60px;
+}
+.section-title
+{
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 400;
+}
+.section-title-2
+{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.section-text
+{
+    font-family: 'Roboto Mono', monospace;
+}
+.text-white
+{
+    color: white;
+}
+.text-green
+{
+    color: #0a9231;
+}
+
+.navbar
+{
+    background-color: #00b032;
+}
+#header .nav .nav-item .nav-link,
+#product .nav .nav-link
+{
+    color: white;
+}
+#header .nav .nav-item .nav-link.active
+{
+    background-color: #0a9231;
+}
+.navbar-toggler
+{
+    background-color: white;
+}
+
+.carousel img
+{
+    height: 700px;
+}
+#about
+{
+    background-color: hsla(137, 100%, 35%, 0.7);
+}
+
+#custom
+{
+    background-color:#badbc3;
+}
+
+#product
+{
+    background-color: rgba(10, 148, 49, 0.9);
+}
+#product .nav .nav-link.active
+{
+    background-color: white;
+    color: rgba(10, 148, 49, 0.9);
+}
+.tab-content
+{
+    background-color: white;
+}
+
+#contact
+{
+    background-color:#badbc3;
+}
+#contact #mensagem
+{
+    resize: none;
+}
+#contact .social-links
+{
+    list-style: none;
+}
+#contact button
+{
+    font-family: "Roboto Mono", sans-serif;
+}
+
+footer
+{
+    background-color: #00b032;
+}
+
+@media screen and (max-width: 767px)
+{
+    #carouselID img
+    {
+        height: 240px;
+    }
+}
